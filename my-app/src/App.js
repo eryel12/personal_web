@@ -5,6 +5,7 @@ import download from "./icon/File.svg";
 import instagram from "./icon/Instagram.svg";
 import linkedin from "./icon/LinkedIn.svg";
 import github from "./icon/GitHub.svg";
+import pointer from "./icon/Vector 9.svg";
 import Wave from 'react-wavify';
 
 function App() {
@@ -53,25 +54,31 @@ function App() {
           <div className="profile_container_left_background">
             A computer science student at Universitas Multimedia Nusantara, an enthusiastic and adaptable student with a strong interest in technology, creativity, and teamwork. Experienced in project coordination, documentation, and creative works such as photography and short movie directing. Eager to keep learning, contribute actively, and develop both technical and interpersonal skills.
           </div>
-          <div className="profile_container_left_download">
-          <img src={download} className='icons'/> Download CV
+          <div className="profile_container_left_download"
+          onClick={() => {
+          const link = document.createElement('a');
+          link.href = "/CV_Eryel Maseya Putra.pdf";
+          link.download = "CV_Eryel Maseya Putra.pdf";
+          link.click();}}
+          >
+            <img src={download} className='icons'/> Download CV
           </div>
         </div>
         <div className="profile_container_right">
-        <div className="profile_container_right_sosmed">
-          <img src={linkedin} className='icons'/> Linked In
+        <div className="profile_container_right_sosmed" onClick={() => window.open("https://www.linkedin.com/in/eryel-maseya-putra-174a3437b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", "_blank")}>
+          <img src={linkedin} className='icons'/> LinkedIn
         </div>
-        <div className="profile_container_right_sosmed">
+        <div className="profile_container_right_sosmed" onClick={() => window.open("https://github.com/eryel12", "_blank")}>
           <img src={github} className='icons'/> GitHub
         </div>
-        <div className="profile_container_right_sosmed">
+        <div className="profile_container_right_sosmed"onClick={() => window.open("https://www.instagram.com/eryel.msy?igsh=MWRlYzRlcWJqNndl&utm_source=qr", "_blank")}>
           <img src={instagram} className='icons'/> Instagram
         </div>
         </div>
       </div>
 
 
-      {/* <div className="skill_container">
+      <div className="skill_container">
         <div className="skill_container_title">
           <div className="skill_container_title_things">
             The Things
@@ -79,6 +86,7 @@ function App() {
           <div className="skill_container_title_good">
             I'm Good At
           </div>
+          <img src={pointer} className='point'/>
         </div>
 
         <div className="skill_container_sikil">
@@ -102,7 +110,7 @@ function App() {
           </div>
         </div>
         
-      </div> */}
+      </div>
 
 
 
