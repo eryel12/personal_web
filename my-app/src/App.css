@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+.container
+{
+  .home_container
+  {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF8D4;
+    display : flex ;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column ;
+    
+    .home_container_title {
+      display : flex ;
+      flex-direction: column;
+
+      .home_container_title_small{
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: 48px;
+      }
+      .home_container_title_big{
+      font-family: "Modak";
+      font-size: 128px;
+      }
+    }
+    .home_container_title_line{
+      width: 2px;
+      height: 116px;
+      background: black;
+      border-radius: 2px;
+      }
+    .home_container_title_mouse{
+      width: 40px;
+      padding-top: 58px;
+      height: 40px;
+      }
+  }
+
+  
+
+  .profile_container
+  {
+    width: 100vw;
+    height: 100vh;
+    background-color: #313647;
+    display : flex ;
+    align-items: center ;
+    justify-content: center;
+    flex-direction: column ;
+
+    .profile_container_left {
+      display : flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .profile_container_left_greetings{
+        font-family: "Poppins";
+        font-weight: 300;
+        font-size: 40px;
+        color: #FFF8D4 ;
+      }
+      .profile_container_left_name{
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 75px;
+        color: #FFF8D4 ;
+      }
+      .profile_container_left_carrier{
+      font-family: "Poppins";
+        font-weight: 300;
+        font-size: 40px;
+        color: #FFF8D4 ;
+      }
+      .profile_container_left_background{
+      font-family: "Poppins";
+        font-weight: 250;
+        font-size: 25px;
+        color: #FFF8D4 ;
+        max-width: 897px;
+        text-align: justify;
+      }
+    }
+    .profile_container_right_sosmed {
+        padding: 12px 24px;
+        font-size: 16px;
+        color: none;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+  }
+
+  .skill_container
+  {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222530 ;
+    display : flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .skill_container_title {
+      display : flex;
+      flex-direction: column;
+
+      .skill_container_title_things {
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 64px;
+        color: #FFF8D4 ;
+      }
+      .skill_container_title_good {
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 96px;
+        color: white ;
+      }
+    }
+    .skill_container_sikil {
+      display : flex;
+      flex-direction: column;
+
+      .skill_container_skills{
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 40px;
+        color: #ffffff ;
+      }
+      .skill_container_skill{
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 40px;
+        color: #a3b087 ;
+      }
+    }
+  }
+
+  .project_container
+  {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222530 ;
+    display : flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .project_container_title{
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: 64px;
+      color: #FFF8D4 ;
+    }
+    .project_container_text{
+      font-family: "Poppins";
+      font-weight: 450;
+      font-size: 48px;
+      color: white ;
+      display : flex ;
+      align-items: center;
+    }
+  }
+}
