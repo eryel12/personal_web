@@ -78,7 +78,7 @@ function App() {
       </div>
 
 
-      <div className="skill_container">
+      {/* <div className="skill_container">
         <div className="skill_container_title">
           <div className="skill_container_title_things">
             The Things
@@ -110,7 +110,7 @@ function App() {
           </div>
         </div>
         
-      </div>
+      </div> */}
 
 
 
