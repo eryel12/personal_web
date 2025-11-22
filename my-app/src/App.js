@@ -1,6 +1,10 @@
 import './App.css';
 import mouse from "./icon/Mouse.png";
 import rocket from "./icon/Rocket.svg";
+import download from "./icon/File.svg";
+import instagram from "./icon/Instagram.svg";
+import linkedin from "./icon/LinkedIn.svg";
+import github from "./icon/GitHub.svg";
 import Wave from 'react-wavify';
 
 function App() {
@@ -22,14 +26,14 @@ function App() {
 
         <div className="home_container_awan">
           <Wave fill='#313647'
-        paused={false}
-        style={{ display: 'flex' }}
-        options={{
+          paused={false}
+          style={{ display: 'flex' }}
+          options={{
           height: 40,
           amplitude: 50,
           speed: 0.3,
           points: 4
-        }}/>
+          }}/>
         </div>
       </div>
 
@@ -50,13 +54,19 @@ function App() {
             A computer science student at Universitas Multimedia Nusantara, an enthusiastic and adaptable student with a strong interest in technology, creativity, and teamwork. Experienced in project coordination, documentation, and creative works such as photography and short movie directing. Eager to keep learning, contribute actively, and develop both technical and interpersonal skills.
           </div>
           <div className="profile_container_left_download">
-
+          <img src={download} className='icons'/> Download CV
           </div>
         </div>
         <div className="profile_container_right">
-          {/* <button className="profile_container_right_sosmed">
-            Linked In
-          </button> */}
+        <div className="profile_container_right_sosmed">
+          <img src={linkedin} className='icons'/> Linked In
+        </div>
+        <div className="profile_container_right_sosmed">
+          <img src={github} className='icons'/> GitHub
+        </div>
+        <div className="profile_container_right_sosmed">
+          <img src={instagram} className='icons'/> Instagram
+        </div>
         </div>
       </div>
 

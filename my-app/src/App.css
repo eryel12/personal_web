@@ -57,13 +57,15 @@
     background-color: #313647;
     display : flex ;
     align-items: center ;
-    justify-content: center;
-    flex-direction: column ;
+    justify-content: space-between;
+    flex-direction: row ;
 
     .profile_container_left {
       display : flex;
       flex-direction: column;
       gap: 24px;
+      padding-left: 150px;
+
 
       .profile_container_left_greetings{
         font-family: "Poppins";
@@ -91,15 +93,48 @@
         max-width: 897px;
         text-align: justify;
       }
+      .profile_container_left_download{
+        font-family: "Poppins";
+        display : flex ;
+        align-items: center;
+        font-weight: 600;
+        font-size: 22px;
+        color: #313647 ;
+        background-color:#a3b087;
+        padding: 8px 16px;
+        width: fit-content;
+        border-radius: 12px;
+        gap: 8px;
+        margin-top: 18px;
+      }
     }
-    .profile_container_right_sosmed {
-        padding: 12px 24px;
-        font-size: 16px;
-        color: none;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
+    .profile_container_right{
+      padding-right: 150px;
+      gap : 20px;
+      display: flex;
+      flex-direction: column;
+
+      .profile_container_right_sosmed {
+        font-family: "Poppins";
+        display : flex ;
+        align-items: center;
+        font-weight: 600;
+        font-size: 22px;
+        color: #a3b087 ;
+        background-color:#313647;
+        padding: 8px 16px;
+        width: 190px;
+        border: 2px solid #a3b087;
+        border-radius: 12px;
+        gap: 8px;
+        margin-top: 18px;  
+      }
     }
+  }
+
+  .icons{
+    height: 27px;
+    width: 27px;
   }
 
   .skill_container
@@ -130,8 +165,9 @@
       }
     }
     .skill_container_sikil {
-      display : flex;
+      display :flex;
       flex-direction: column;
+      align-items: center;
 
       .skill_container_skills{
         font-family: "Poppins";
