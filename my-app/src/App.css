@@ -15,28 +15,37 @@
     .home_container_title {
       display : flex ;
       flex-direction: column;
+      margin-top: 360px;
 
       .home_container_title_small{
       font-family: "Poppins";
       font-weight: 600;
       font-size: 48px;
+      color: #313647;
+      margin-bottom: -30px;
       }
       .home_container_title_big{
       font-family: "Modak";
       font-size: 128px;
+      color: #313647;
       }
     }
     .home_container_title_line{
       width: 2px;
       height: 116px;
       background: black;
+      margin-top: 30px;
       border-radius: 2px;
       }
     .home_container_title_mouse{
       width: 40px;
       padding-top: 58px;
       height: 40px;
+      padding-bottom: 58px;
       }
+    .home_container_awan{
+      width:100%;
+    }
   }
 
   

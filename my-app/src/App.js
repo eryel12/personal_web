@@ -1,6 +1,8 @@
 import './App.css';
 import mouse from "./icon/Mouse.png";
 import rocket from "./icon/Rocket.svg";
+import Wave from 'react-wavify';
+
 function App() {
   return (
 
@@ -19,7 +21,15 @@ function App() {
         <img className="home_container_title_mouse" src={mouse}/>
 
         <div className="home_container_awan">
-
+          <Wave fill='#313647'
+        paused={false}
+        style={{ display: 'flex' }}
+        options={{
+          height: 40,
+          amplitude: 50,
+          speed: 0.3,
+          points: 4
+        }}/>
         </div>
       </div>
 
